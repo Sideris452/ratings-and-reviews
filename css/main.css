@@ -177,7 +177,7 @@ p {
   flex-direction: column;
   align-items: center;
   margin: 30px 0 60px 0;
-  max-width: 80%;
+  min-width: 80%;
 }
 
 .reviewer {
@@ -220,22 +220,6 @@ p {
   font-weight: 500;
   text-align: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -327,6 +311,108 @@ p {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+
+
+   @media only screen and (min-width:1200px) {
+
+.content-wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  max-width:  70%;
+  margin: 80px 100px;
+}
+
+.text-and-stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 60%;
+  margin-bottom: 40px;
+}
+
+.text-container {
+  min-width: 400px;
+}
+
+h1 {
+  text-align: left;
+  padding: 0;
+}
+
+.claim {
+  text-align: left;
+  padding: 0;
+}
+
+.claims-container {
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.star-review {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 0 6px 15px;
+  min-width: 447px;
+}
+
+.star-1 {
+  align-self: flex-end;
+}
+
+.star-2 {
+  align-self: center;
+}
+
+.star-3 {
+  align-self: flex-start;
+}
+
+.stars {
+  margin: 0;
+  padding: 0;
+}
+
+.star-icon {
+  margin: 0;
+}
+
+.reviews-container {
+  flex-direction: row;
+  min-width: 40%;
+}
+
+.reviewer {
+  min-height: 80%;
+}
+
+.profile-1 {
+  align-self: flex-end;
+}
+
+.profile-2 {
+  align-self: center;
+}
+
+.profile-3 {
+  align-self: flex-start;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */

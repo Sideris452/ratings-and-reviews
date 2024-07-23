@@ -313,21 +313,133 @@ p {
    ========================================================================== */
 
 
+   @media only screen and (min-width:768px) {
+
+   
+   .content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    max-width:  800px;
+    margin: 0;
+  }
+  
+  .text-and-stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 75%;
+    margin-bottom: 10px;
+  }
+  
+  .text-container {
+    min-width: 300px;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: left;
+    padding: 0;
+  }
+  
+  .claim {
+    text-align: left;
+    padding: 0;
+  }
+  
+  .claims-container {
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    max-width: 60%;
+  }
+  
+  .star-review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 0 6px 15px;
+    min-width: 280px;
+  }
+  
+  .star-1 {
+    align-self: flex-start;
+  }
+  
+  .star-2 {
+    align-self: center;
+  }
+  
+  .star-3 {
+    align-self: flex-end;
+  }
+  
+  .stars {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .star-icon {
+    margin: 0;
+  }
+  
+  .reviews-container {
+    flex-direction: row;
+    min-width: 80%;
+    min-height: 250px;
+    margin: 0;
+  }
+  
+  .reviewer {
+    max-height: 200px;
+    padding: 15px;
+  }
+
+  .profile-info {
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+  }
+
+  .statement {
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 400;
+    padding: 5px;
+    margin: 0;
+  }
+  
+  .profile-1 {
+    align-self: flex-start;
+  }
+  
+  .profile-2 {
+    align-self: center;
+  }
+  
+  .profile-3 {
+    align-self: flex-end;
+  }
+
+}
+
+/* Desktop styles*/
 
    @media only screen and (min-width:1200px) {
 
 .content-wrapper {
   flex-direction: column;
   align-items: flex-start;
-  max-width:  70%;
-  margin: 80px 100px;
+  width: 80%;
+  max-width:  1100px;
+  margin: 50px 50px;
 }
 
 .text-and-stars {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  max-width: 60%;
+  max-width: 70%;
   margin-bottom: 40px;
 }
 
@@ -349,6 +461,7 @@ h1 {
   align-items: flex-start;
   justify-content: center;
   margin-left: 40px;
+  margin: 0;
 }
 
 .star-review {
@@ -360,7 +473,7 @@ h1 {
 }
 
 .star-1 {
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 .star-2 {
@@ -368,7 +481,7 @@ h1 {
 }
 
 .star-3 {
-  align-self: flex-start;
+  align-self: flex-end;
 }
 
 .stars {
@@ -382,15 +495,25 @@ h1 {
 
 .reviews-container {
   flex-direction: row;
-  min-width: 40%;
+  width: 80%;
+  min-width: 1050px;
+  height: 310px;
 }
 
 .reviewer {
-  min-height: 80%;
+  min-height: 70%;
+  padding: 20px;
+}
+
+.statement {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin-top: 20px;
 }
 
 .profile-1 {
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 .profile-2 {
@@ -398,7 +521,7 @@ h1 {
 }
 
 .profile-3 {
-  align-self: flex-start;
+  align-self: flex-end;
 }
 
 

@@ -313,15 +313,16 @@ p {
    ========================================================================== */
 
 
+   /* Tablet styles */
+
    @media only screen and (min-width:768px) {
 
-   
    .content-wrapper {
     flex-direction: column;
     align-items: flex-start;
     width: 90%;
     max-width:  800px;
-    margin: 0;
+    margin: 20px 0 0 0;
   }
   
   .text-and-stars {
@@ -396,17 +397,16 @@ p {
   }
 
   .profile-info {
-    margin: 0;
     padding: 0;
-    margin: 5px;
+    margin: 5px 5px 10px 5px;
   }
 
   .statement {
     font-size: 1em;
     line-height: 1em;
     font-weight: 400;
-    padding: 5px;
-    margin: 0;
+    padding: 8px;
+    margin-top: 10px;
   }
   
   .profile-1 {
